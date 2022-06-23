@@ -22,7 +22,7 @@ public class StudentClientUI {
 		Integer id= (int)(1000+Math.random()*1234.1234);
 
 
-		System.out.println("Enter Choice! 1. Create 2. Update 3. Retrieve 4. Delete");
+		System.out.println("Enter Choice! 1. Create 2. Retrieve  3. Update 4. Delete");
 		number = sc.nextInt();
 		switch(number){
 			case 1:
