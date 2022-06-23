@@ -1,4 +1,4 @@
-package com.lti.jpacrud.util;
+package com.lti.util;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

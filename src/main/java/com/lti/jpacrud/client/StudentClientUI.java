@@ -7,14 +7,14 @@ import com.lti.jpacrud.entities.Student;
 import com.lti.jpacrud.exceptions.StudentException;
 import com.lti.jpacrud.service.IStudentService;
 import com.lti.jpacrud.service.StudentService;
-import com.lti.jpacrud.util.JPAUtil;
+import com.lti.util.JPAUtil;
 
 public class StudentClientUI {
 
 	static IStudentService service = new StudentService();
 
 
-	public static void main(String[] args) throws StudentException {
+	public static void studentClientUI(String[] args) throws StudentException {
 
 		Scanner sc = new Scanner(System.in);
 		Integer number = 0;

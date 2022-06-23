@@ -5,7 +5,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import com.lti.jpacrud.entities.Student;
-import com.lti.jpacrud.util.JPAUtil;
+import com.lti.util.JPAUtil;
 public class StudentDao implements IStudentDao {
 	private EntityManager entityManager;
 	public StudentDao() {
