@@ -9,9 +9,9 @@ import javax.persistence.EntityTransaction;
 
 import com.lti.util.JPAUtil;
 
-public class OTOMain {
+public class OTOClient {
 
-	static EntityManager entityManager = JPAUtil.getEntityManager();
+	private static EntityManager entityManager = JPAUtil.getEntityManager();
 
 	public void otoClient(String[] args) {
 		Scanner sc = new Scanner(System.in);
