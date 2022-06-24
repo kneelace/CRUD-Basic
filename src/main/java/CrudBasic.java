@@ -1,3 +1,4 @@
+import com.lti.jpacrud.client.StudentClientUI;
 import com.lti.jpacrud.exceptions.StudentException;
 import com.lti.jpaoto.OTOClient;
 import com.lti.jpaoto2.OTOClient2;
@@ -6,14 +7,31 @@ public class CrudBasic {
 
     public static void main(String[] args) throws StudentException {
 
-//      StudentClientUI studentClientUI = new StudentClientUI();
-//      studentClientUI.studentClientUI(args);
+        String choice = "studentClientUI";
 
-//        OTOClient otoMain = new OTOClient();
-//        otoMain.otoClient(args);
+        switch (choice){
+            case "studentClientUI":
+                StudentClientUI studentClientUI = new StudentClientUI();
+                studentClientUI.studentClientUI(args);
+                break;
 
-        OTOClient2 otoMain2 = new OTOClient2();
-        otoMain2.OtoClient2(args);
+            case "otoMain":
+                OTOClient otoMain = new OTOClient();
+                otoMain.otoClient(args);
+                break;
+
+            case "otoMain2":
+                OTOClient2 otoMain2 = new OTOClient2();
+                otoMain2.OtoClient2(args);
+                break;
+
+            default:
+                System.out.println("No wiring done!");
+
+
+        }
+
+
 
 
     }
